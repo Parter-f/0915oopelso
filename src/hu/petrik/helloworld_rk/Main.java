@@ -1,7 +1,7 @@
 package hu.petrik.helloworld_rk;
 
 import hu.petrik.pontoop.pont.Point;
-import korfeladat.Kor;
+import hu.petrik.kor.Kor;
 
 public class Main {
 
