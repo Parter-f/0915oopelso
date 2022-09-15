@@ -34,6 +34,23 @@ public class Point {
         return Math.sqrt((p2.y - p1.y) * (p2.y - p1.y) + (p2.x - p1.x) * (p2.x - p1.x) );
     }
 
+    public static double getsiknegyed(Point p1)
+    {
+        if (p1.x > 0 && p1.y > 0){
+            return 4;
+        }
+        else if (p1.x > 0 && p1.y < 0){
+            return 3;
+        }
+        else if (p1.x < 0 && p1.y > 0){
+            return 1;
+        }
+        else if (p1.x < 0 && p1.y < 0){
+            return 2;
+        }
+        return 0;
+    }
+
     @Override
     public String toString() {
         return "Point{" +
