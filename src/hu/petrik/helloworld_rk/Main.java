@@ -20,9 +20,9 @@ public class Main {
             pontok[i] = new Point(100);
 
         }
-        for (int i = 0; i < pontok.length; i++) {
+        for (Point point : pontok) {
 
-            System.out.println(pontok[i]);
+            System.out.println(point);
         }
     }
 }
