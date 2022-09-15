@@ -1,5 +1,7 @@
 package hu.petrik.pontoop.pont;
 
+import hu.petrik.helloworld_rk.Main;
+
 public class Point {
 
     private int x;
@@ -13,6 +15,16 @@ public class Point {
     {
         this.x = x;
         this.y = y;
+    }
+
+    public  Point(int n){
+
+        this.x = koordinatagen(n);
+        this.y = koordinatagen(n);
+    }
+
+    private int koordinatagen(int n) {
+        return (int)(Math.random() * ( 2 * n ) + 1) - n;
     }
 
     @Override
