@@ -30,6 +30,9 @@ public class Point {
     public double getOrigotav(){
         return Math.sqrt((Math.pow(this.x , 2) + Math.pow(this.y , 2)));
     }
+    public static double getponttav(Point p1 , Point p2){
+        return Math.sqrt((p2.y - p1.y) * (p2.y - p1.y) + (p2.x - p1.x) * (p2.x - p1.x) );
+    }
 
     @Override
     public String toString() {

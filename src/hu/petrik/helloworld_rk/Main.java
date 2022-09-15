@@ -24,5 +24,19 @@ public class Main {
 
             System.out.println(point);
         }
+        int legtavolabb = 0;
+        for (int i = 0; i < pontok.length; i++) {
+
+        if (pontok[i].getOrigotav() > pontok[legtavolabb].getOrigotav())
+            legtavolabb = i;
+        }
+        System.out.println("legtávolabbi pont és távolsága");
+        System.out.println(pontok[legtavolabb]);
+        System.out.println(pontok[legtavolabb].getOrigotav());
+        Point p5 = new Point(5 , 10);
+        Point p6 = new Point(2 , 15);
+
+        System.out.println(p5 + " " + p6);
+        System.out.println(Point.getponttav(p5 , p6));
     }
 }
